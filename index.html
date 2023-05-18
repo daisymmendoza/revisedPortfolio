@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home- Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- Source Code Pro Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="projectPage.html">Projects</a>
+        <a href="aboutPage.html">About</a>
+        <a href="contactPage.html">Contact</a>
+    </div>
+
+    <!-- Intro section -->
+    <div class="introSec">
+        <!-- Personal intro -->
+        <div  class="introDesc">
+            <p id="introGreet">Hi, my name is</p>
+            <h1 id="name">Daisy Mendoza</h1>
+            <p id="nameDesc">
+                I am a web developer from Arizona with a passion for creating functional, dynamic, and appealing websites. I aim to utilize my skillsets in future projects and opportunities that present themselves.
+            </p>
+
+            <!-- Learn more button -->
+            <button id="lrnBtn" onclick="document.location='aboutPage.html'">Learn more</button>
+        </div>
+        
+        <!-- Moon Image-->
+        <img class="moonImg" src="images/moon.png" alt="Moon" width="300px" height="300px">
+    </div>
+
+    <!-- Project section -->
+    <div class="projectHomeSec">
+        <h2 class="projectHomeTitle">Projects</h2>
+
+        <p id="projectDesc">Take a look at some projects I've created!</p>
+
+        <!-- Project boxes -->
+        <div class="projectHome">
+            <!-- eCommerce box -->
+            <a href="https://daisymmendoza.github.io/eCommerce/" target="_blank">
+                <div class="projectContainer">
+                    <div class="cardInner">
+                        <div class="cardFront">
+                            <img class="projectImg" src="images/eCommerce.png" alt="Project">
+                            <div>
+                                <h3 class="cardCap">eCommerce</h3>
+                            </div>
+                        </div>
+                        <div class="cardBack">
+                            <div class="desc">
+                                Date Created: 3/5/22
+                                <br>
+                                <br>
+                                Website created with HTML, CSS, and JavaScript to replicate an eCommerce website and its functionality.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Hosting plans box -->
+            <a href="https://daisymmendoza.github.io/hostingplans/" target="_blank">
+                <div class="projectContainer">
+                    <div class="cardInner">
+                        <div class="cardFront">
+                            <img class="projectImg" src="images/hostingplans.png" alt="Project">
+                            <div>
+                                <h3 class="cardCap">Hosting Plans</h3>
+                            </div>
+                        </div>
+                        <div class="cardBack">
+                            <div class="desc">
+                                Date Created: 1/22/22
+                                <br>
+                                <br>
+                                Website created with HTML, CSS, and JavaScript that uses functions to calculate the total cost of purchasing a hosting plan.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- PHP and SQL box -->
+            <a href="http://daisymendoza.rf.gd/tourBooking/home.php" target="_blank">
+                <div class="projectContainer">
+                    <div class="cardInner">
+                        <div class="cardFront">
+                            <img class="projectImg" src="images/php.PNG" alt="Project">
+                            <div>
+                                <h3 class="cardCap">PHP Tour Booking</h3>
+                            </div>
+                        </div>
+                        <div class="cardBack">
+                            <div class="desc">
+                                Date Created: 2/8/23
+                                <br>
+                                <br>
+                                Website created with HTML, CSS, SQL, and PHP that allows users to book a tour. which is then stored in a database.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Canvas drawing box -->
+            <a href="https://daisymmendoza.github.io/canvasdrawing/" target="_blank">
+                <div class="projectContainer">
+                    <div class="cardInner">
+                        <div class="cardFront">
+                            <img class="projectImg" src="images/canvas.png" alt="Project">
+                            <div>
+                                <h3 class="cardCap">Canvas Drawing</h3>
+                            </div>
+                        </div>
+                        <div class="cardBack">
+                            <div class="desc">
+                                Date Created: 2/16/22
+                                <br>
+                                <br>
+                                Drawing created with HTML and JavaScript that depicts an image using Canvas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        
+        <!-- Learn more button -->
+        <div class="viewbtnContainer">
+            <button id="viewBtn" onclick="document.location='projectPage.html'">View All</button>
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <div class="contactHomeSec">
+        <h2 class="contactTitle">Contact</h2>
+
+        <p class="contactDesc">
+            If you have any questions or inquiries, please do not hesitate to contact me!
+        </p>
+
+        <div class="viewbtnContainer">
+            <button class="contactBtn" onclick="document.location='contactPage.html'">Contact Now</button>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footHome">
+            <div class="footerLinks">
+                <a href="index.html">Home</a>
+                <a href="projectPage.html">Projects</a>
+                <a href="aboutPage.html">About</a>
+                <a href="contactPage.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
